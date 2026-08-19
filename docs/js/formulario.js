@@ -3,6 +3,11 @@ const formulario = document.querySelector("form");
 formulario.addEventListener("submit", async (e) => {
     e.preventDefault();
 
+     const inputNombre = document.querySelector("#nombre");
+    const inputPrecio = document.querySelector("#precio");
+    const inputImagen = document.querySelector("#imagen");
+    const inputCategoria = document.querySelector("#categoria");
+
     const nombre = document.querySelector("#nombre").value;
     const contenido = document.querySelector("#precio").value;
     const edad = document.querySelector("#imagen").value
@@ -34,11 +39,14 @@ formulario.addEventListener("submit", async (e) => {
   icon: "success"
 });
 
-    nombre.value = ""
-    precio.value = ""
-    imagen.value = ""
-    categoria.value = ""
-    formulario.focus()
+    // Limpiar los campos
+        inputNombre.value = "";
+        inputPrecio.value = "";
+        inputImagen.value = "";
+        inputCategoria.value = "";
+
+        // Volver al primer campo
+        inputNombre.focus();
 
 
 
