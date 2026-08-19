@@ -16,7 +16,7 @@ formulario.addEventListener("submit", async (e) => {
     };
 
     try {
-        const respuesta = await fetch("http://localhost:3000/productos", {
+        const respuesta = await fetch("https://formulario-registro-edza.onrender.com/productos", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
