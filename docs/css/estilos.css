@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #444444;
+}
+
+.contacto h1{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+.contenedor-global{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.contenedor-global div form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    padding: 20px;
+    color: white;
+}
